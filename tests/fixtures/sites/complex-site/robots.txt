@@ -1,0 +1,5 @@
+User-agent: *
+# This comment should not terminate the group
+Disallow: /blocked-page
+
+Sitemap: https://complex-site.example/sitemap.xml

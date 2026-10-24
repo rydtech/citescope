@@ -1,0 +1,31 @@
+{
+  "name": "@citescope/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "node --env-file=.env --import tsx/esm --watch src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@citescope/audit-rules": "*",
+    "@citescope/contracts": "*",
+    "@citescope/crawler": "*",
+    "@citescope/database": "*",
+    "@citescope/scoring": "*",
+    "bullmq": "^5.0.0",
+    "cheerio": "^1.0.0",
+    "ioredis": "^5.3.2",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}

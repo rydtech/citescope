@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>Complex Site Home</title>
+  <link rel="canonical" href="https://complex-site.example/index.html">
+  <script type="application/ld+json">{ invalid json syntax here </script>
+</head>
+<body>
+  <h1>Complex Site Home</h1>
+  <!-- Link to a page that exists and is fetchable -->
+  <a href="/good-page.html">Good Page</a>
+  <!-- Link to a page blocked by robots.txt — target should be unknown, not pass -->
+  <a href="/blocked-page">Blocked Page</a>
+  <!-- Link to a page that returns 404 — should produce broken link finding -->
+  <a href="/broken-page/">Broken Page</a>
+</body>
+</html>

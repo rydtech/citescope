@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- SEO006: missing title -->
+  <!-- SEO005: noindex -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- SEO008: two different canonicals -->
+  <link rel="canonical" href="http://localhost:9002/">
+  <link rel="canonical" href="http://localhost:9002/home">
+  <!-- SEO009: invalid JSON-LD -->
+  <script type="application/ld+json">{ invalid json here </script>
+</head>
+<body>
+  <h1>Bad Site</h1>
+  <!-- SEO002: broken internal link -->
+  <a href="/does-not-exist.html">Missing page</a>
+  <a href="/about.html">About</a>
+</body>
+</html>

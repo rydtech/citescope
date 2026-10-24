@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /blocked/
+
+Sitemap: http://localhost:9003/sitemap.xml

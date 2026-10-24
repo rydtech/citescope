@@ -1,0 +1,14 @@
+{
+  "name": "citescope",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "build": "npm run build --workspace=packages/contracts && npm run build --workspace=packages/database && npm run build --workspace=packages/crawler && npm run build --workspace=packages/audit-rules && npm run build --workspace=packages/scoring && npm run build --workspace=apps/web --if-present && npm run build --workspace=apps/worker --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
